@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Globalization;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Open_Lab_04._09
 {
@@ -6,7 +9,8 @@ namespace Open_Lab_04._09
     {
         public string[] RemoveDups(string[] strings)
         {
-            throw new NotImplementedException();
+            string[] dupsRemoved = strings.Distinct().ToArray();
+            return dupsRemoved;
         }
     }
 }
